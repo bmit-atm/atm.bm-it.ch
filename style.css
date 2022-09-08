@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('bg.jfif');
+    font-family: sans-serif;
+    color: white;
+}
+h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+    padding: 50px;
+    border: 10px solid rgb(0, 128, 64);
+    border-radius: 60px;
+    background-color: transparent;
+}
+.container .meinfoto{
+    border: 5px solid green !important;
+    padding: 10px !important;
+    margin: 4%;
+    max-width: 500px !important;
+}
