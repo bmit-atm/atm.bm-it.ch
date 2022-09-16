@@ -2,27 +2,210 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 body{
-    background-image: url('bg.jfif');
-    font-family: sans-serif;
+    color: #fff;
+    font-size: 20px;
+    padding: 30px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(73,121,9,0.6362920168067228) 60%, rgba(0,212,255,1)100%);
+}
+/*Von hier header*/
+header .pre-header{
+    color: white;
+    text-align: center;
+}
+header .nav{
+    color: white;
+    text-align: center;
+}
+header .nav img{
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+header .nav ul{
+    display: none; 
+    list-style: none;
+    font-size: 22px;
+    z-index: 9;
+    justify-content: space-between;
+    text-align: center;
+}
+header .nav ul li a{
+    padding: 8px;
+    display: block; 
     color: white;
 }
-h1{
+/*von hier Textanim*/
+.textAnim h1{
+    height: 50vh;
     text-align: center;
-    margin-bottom: 15px;
+    line-height: 40vh;
+    font-size: 5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: red;
 }
-.container{
-    max-width: 1400px;
+.textAnim h1 span{
+    opacity: 0;
+    transition: all 0,3s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
+.textAnim .fadeMove{
+    transform: translateY(0);
+    opacity: 1;
+}
+/*SliderWrapper1*/
+.sliderWrapper{
+    max-width: 500px;
+    height: 450px;
     margin: auto;
-    padding: 50px;
-    border: 10px solid rgb(0, 128, 64);
-    border-radius: 60px;
-    background-color: transparent;
+    position: relative;
+    color: rgb(21, 189, 124);
+    text-align: center;
 }
-.container .meinfoto{
-    border: 5px solid green !important;
-    padding: 10px !important;
-    margin: 4%;
-    max-width: 500px !important;
+.sliderWrapper .sliderImg{
+    height: 100%;
+}
+.sliderWrapper .sliderImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+.sliderWrapper .sliderImg img:first-child{
+    display: block;
+}
+.sliderWrapper button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    outline: none;
+    background: rgb(42, 116, 177);
+    cursor: pointer;
+    top: 50%;
+    position: absolute;
+    z-index: 999;
+}
+.sliderWrapper button .arrow{
+    border: solid rgb(12, 7, 7);
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 8px;
+    transition: transform 0.3s;
+    outline: none;
+}
+.sliderWrapper #rechtsBtn{
+    right:0;
+}
+.sliderWrapper #rechtsBtn .arrow{
+    transform:rotate(-45deg);
+}
+.sliderWrapper #linksBtn{
+    left:0;
+}
+.sliderWrapper #linksBtn .arrow{
+    transform: rotate(135deg);
+}
+main h1{
+    text-align: center; 
+    color: white;
+}
+/*SliderWrapper 2*/
+.sliderWrapper2{
+    max-width: 500px;
+    height: 450px;
+    margin: auto;
+    position: relative;
+    color: rgb(21, 189, 124);
+    text-align: center;
+}
+.sliderWrapper2 .sliderImg2{
+    height: 100%;
+}
+.sliderWrapper2 .sliderImg2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+.sliderWrapper2 .sliderImg2 img:first-child{
+    display: block;
+}
+.sliderWrapper2 button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    outline: none;
+    background: rgb(42, 116, 177);
+    cursor: pointer;
+    top: 50%;
+    position: absolute;
+    z-index: 999;
+}
+.sliderWrapper2 button .arrow2{
+    border: solid rgb(12, 7, 7);
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 8px;
+    transition: transform 0.3s;
+    outline: none;
+}
+.sliderWrapper2 #rechtsBtn2{
+    right:0;
+}
+.sliderWrapper2 #rechtsBtn2 .arrow2{
+    transform:rotate(-45deg);
+}
+.sliderWrapper2 #linksBtn2{
+    left:0;
+}
+.sliderWrapper2 #linksBtn2 .arrow2{
+    transform: rotate(135deg);
+}
+/*Portfolio*/
+.portfolioWrapper{
+    max-width: 500px;
+    margin: auto;
+}
+.portfolioKat{
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+.portfolioKat button{
+    padding: 2px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.portfolioItems{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.portfolioSingleItem{
+    width: 30%;
+    padding: 15px 4px;
+    margin-bottom: 3%;
+}
+.blue{
+    background-color: aquamarine;
+}
+.green{
+    background-color: darkseagreen;
+}
+.brown{
+    background-color: tan;
+}
+.rose{
+    background-color: darksalmon;
+}
+/*Von hier geht Footer*/
+footer {
+    background-color:black;
+    color: white;
 }
